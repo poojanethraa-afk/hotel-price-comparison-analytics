@@ -30,3 +30,4 @@ print("Number of outlier rows:", outliers)
 df_clean= df_clean[~df_clean["is_outlier"]]
 print("Rows after removing outliers:", len(df_clean))
 
+df_clean.to_csv("data/offers_clean.csv", index=False)
