@@ -41,3 +41,4 @@ print(bookings_by_device)
 conversion_by_device = (bookings_by_device / searches_by_device) * 100
 print("\nConversion rate by device (%):")
 print(conversion_by_device)
+conversion_by_device.to_csv("data/conversion_by_device.csv", header=["conversion_rate"])
